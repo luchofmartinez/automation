@@ -1,6 +1,3 @@
-
-
-
 # Version Control Software - Ventajas y desventajas
 
 ## Mercurial
@@ -43,3 +40,11 @@
 - **Jenkins**: Herramienta de código abierto desarrollada en Java. Usa una gran variedad de plugins. Soporta herramientas de control de versiones como CVS, Subversion(SVN), Git, Mercurial y ejecuta proyectos basados como Apache Maven.
 - **Bamboo**: Presta servicio tanto de nube como de instalacion. Es gratis solamente por 30 dias y luego de eso ofrece planes para equipos grandes y chicos. Es una herramiento de Atlassian y es de facil importar configuraciones de JIRA y Bitbucket
 - **Hudson**:  Herramienta de código abierto desarrollada en Java basada en Servlets como Tomcat y GlassFish. Trabaja con herramientas de control de versiones como CVS, Subversion (SVN)y Git
+
+## Comandos GIT 
+- GIT STATUS
+- GIT ADD
+- GIT PUSH ORIGIN MASTER
+- GIT CHECKOUT
+- GIT COMMIT
+- GIT CLONE
