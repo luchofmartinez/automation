@@ -48,6 +48,7 @@
 - GIT CHECKOUT
 - GIT COMMIT
 - GIT CLONE [reposity]
+http://ndpsoftware.com/git-cheatsheet.html#loc=stash;
 
 ## como clono el repo en ssh
 ## imagen
