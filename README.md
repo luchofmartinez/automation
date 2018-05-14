@@ -50,4 +50,8 @@
 - GIT CLONE [reposity]
 
 ## como clono el repo en ssh
+## imagen
 ## que es ssh
+
+## informacion sobre docker - 
+## pagina de como instalar docker en windows
