@@ -43,8 +43,11 @@
 
 ## Comandos GIT 
 - GIT STATUS
-- GIT ADD
+- GIT ADD [file name]
 - GIT PUSH ORIGIN MASTER
 - GIT CHECKOUT
 - GIT COMMIT
-- GIT CLONE
+- GIT CLONE [reposity]
+
+## como clono el repo en ssh
+## que es ssh
