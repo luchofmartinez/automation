@@ -51,8 +51,11 @@
 http://ndpsoftware.com/git-cheatsheet.html#loc=stash;
 
 ## como clono el repo en ssh
-## imagen
+![GitHub Image](/images/github01.png)
 ## que es ssh
+SSH (Secure shell), protocolo y programa que lo implementa y sirve para acceder servidores privados a través de una puerta trasera, permitiendo manejar por completo el servidor mediante un intérprete de comandos. Tambien nos permite copiar datos de forma segura (tanto archivos sueltos como simular sesiones FTP cifradas), gestionar claves RSA para no escribir claves al conectar a los dispositivos y pasar los datos de cualquier otra aplicación por un canal seguro tunelizado mediante SSH.
 
-## informacion sobre docker - 
-## pagina de como instalar docker en windows
+## Informacion sobre docker - 
+-
+## Pagina de como instalar docker en windows
+Link: <https://docs.docker.com/docker-for-windows/install>
