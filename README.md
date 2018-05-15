@@ -51,7 +51,17 @@
 http://ndpsoftware.com/git-cheatsheet.html#loc=stash;
 
 ## como clono el repo en ssh
+Mediante el comando: 
+> git clone ssh://user@server/project.git
+Ã³
+Tambien se puede prescindir del protocolo, Git asume que se esta usando 
+el protocolo SSH y el usuario conectado en ese momento.
+
+> git clone user@server/project.git
+
+Ejemplo: imagen de las claves SSH generadas
 ![GitHub Image](/images/github01.png)
+
 ## que es ssh
 SSH (Secure shell), protocolo y programa que lo implementa y sirve para acceder servidores privados a través de una puerta trasera, permitiendo manejar por completo el servidor mediante un intérprete de comandos. Tambien nos permite copiar datos de forma segura (tanto archivos sueltos como simular sesiones FTP cifradas), gestionar claves RSA para no escribir claves al conectar a los dispositivos y pasar los datos de cualquier otra aplicación por un canal seguro tunelizado mediante SSH.
 
