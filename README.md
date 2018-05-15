@@ -51,8 +51,30 @@
 http://ndpsoftware.com/git-cheatsheet.html#loc=stash;
 
 ## como clono el repo en ssh
-## imagen
-## que es ssh
+Mediante el comando: 
+> git clone ssh://user@server/project.git
+贸
+Tambien se puede prescindir del protocolo, Git asume que se esta usando 
+el protocolo SSH y el usuario conectado en ese momento.
 
-## informacion sobre docker - 
-## pagina de como instalar docker en windows
+> git clone user@server/project.git
+
+Ejemplo: imagen de las claves SSH generadas
+![GitHub Image](/images/github01.png)
+
+## que es ssh
+SSH (Secure shell), protocolo y programa que lo implementa y sirve para acceder servidores privados a trav閟 de una puerta trasera, permitiendo manejar por completo el servidor mediante un int閞prete de comandos. Tambien nos permite copiar datos de forma segura (tanto archivos sueltos como simular sesiones FTP cifradas), gestionar claves RSA para no escribir claves al conectar a los dispositivos y pasar los datos de cualquier otra aplicaci髇 por un canal seguro tunelizado mediante SSH.
+
+## Informacion sobre docker - 
+Docker es un proyecto de c贸digo abierto que automatiza el despliegue de 
+aplicaciones dentro de contenedores de software, proporcionando una capa 
+adicional de abstracci贸n y automatizaci贸n de Virtualizaci贸n a nivel de 
+sistema operativo en Linux.
+Docker accede a la virtualizaci贸n del kernel Linux ya sea directamente a 
+trav茅s de la biblioteca libcontainer (disponible desde Docker 0.9), o 
+indirectamente a trav茅s de libvirt, LXC o systemd-nspawn como se 
+visualiza en la siguiente imagen: 
+![Docker](/images/docker01.png)
+
+## Pagina de como instalar docker en windows
+Link: <https://docs.docker.com/docker-for-windows/install>
