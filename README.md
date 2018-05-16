@@ -85,9 +85,13 @@ Link: <https://docs.docker.com/docker-for-windows/install>
 
 ## Maven.
 ##### 	¿Que es Maven?
-##### 	¿Como instalar Maven?
-##### 	¿Que version de maven tengo instalada?
-##### 	¿Ciclo de Vida?
+##### 	Como instalar Maven.
+##### 	¿Que version de Maven tengo instalada?
+##### 	Ciclo de Vida.
 ##### 	¿Que son archetype?
+
+## POM.
+##### 	¿Que es Maven?
+##### 	Como agregar una nueva dependencia.
 
 ## Debug Remoto.
