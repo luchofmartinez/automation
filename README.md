@@ -79,6 +79,10 @@ visualiza en la siguiente imagen:
 ## Pagina de como instalar docker en windows
 Link: <https://docs.docker.com/docker-for-windows/install>
 
+## Selenium.
+##### 	¿Que es selenium IDE?
+##### 	¿Que es selenium Web Driver?
+
 ## Maven.
 ##### 	¿Que es Maven?
 ##### 	¿Como instalar Maven?
@@ -86,6 +90,4 @@ Link: <https://docs.docker.com/docker-for-windows/install>
 ##### 	¿Ciclo de Vida?
 ##### 	¿Que son archetype?
 
-## Selenium.
-##### 	¿Que es selenium IDE?
-##### 	¿Que es selenium Web Driver?
+## Debug Remoto.
