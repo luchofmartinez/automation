@@ -95,3 +95,5 @@ Link: <https://docs.docker.com/docker-for-windows/install>
 ##### 	Como agregar una nueva dependencia.
 
 ## Debug Remoto.
+
+https://es.wikipedia.org/wiki/Plain_Old_Java_Object
