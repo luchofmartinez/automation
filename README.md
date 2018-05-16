@@ -80,8 +80,8 @@ visualiza en la siguiente imagen:
 Link: <https://docs.docker.com/docker-for-windows/install>
 
 ## Maven .
-###Que es Maven?
-###Como instalar Maven?
+### Que es Maven?
+### Como instalar Maven?
 
 como ver la version de maven
 ciclo de vida
