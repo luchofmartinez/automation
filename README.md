@@ -79,13 +79,13 @@ visualiza en la siguiente imagen:
 ## Pagina de como instalar docker en windows
 Link: <https://docs.docker.com/docker-for-windows/install>
 
-## Maven .
+## Maven.
 ##### 	¿Que es Maven?
 ##### 	¿Como instalar Maven?
 ##### 	¿Que version de maven tengo instalada?
-##### 	¿Ciclo de Vida.
+##### 	¿Ciclo de Vida?
+##### 	¿Que son archetype?
 
-como ver la version de maven
-ciclo de vida
-definicion 
-algunos comandos
+## Selenium.
+##### 	¿Que es selenium IDE?
+##### 	¿Que es selenium Web Driver?
