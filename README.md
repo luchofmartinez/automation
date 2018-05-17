@@ -108,31 +108,26 @@ https://es.wikipedia.org/wiki/Plain_Old_Java_Object
 
 >echo 
 "\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*"
->
 >echo "\* Create a proyect with mvn and archetype:jbehave" 
->
 >echo "\* groupId	Company." 
->
 >echo "\* artifactId	Projet." 
->
 >echo "\* version	RELEASE is a valid version." 
->
 >echo "\* repository	The repository where to find the archetype." 
->
 >echo "\* package	groupId + artifactId" 
-echo "* description	The description of the archetype." 
-echo "* " 
-echo "* mvn clean install -DstoryFilter=native.story" 
-echo "* mvn clean install -Dmeta.filter=native" 
-echo "* mvn clean install -DstoryFilter=native.story -Dmeta.filter=native" 
-echo "* mvn eclipse:eclipse" 
-echo "* mvn idea:idea" 
-echo "* Linux MAVEN_OPTS=\"-Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005\";" 
-echo "* Linux export MAVEN_OPTS" 
-echo "* Windows set MAVEN_OPTS=\"-Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000\";" 
-echo "*****************************************************************************************************************" 
-mvn archetype:generate -Dfilter=org.jbehave:jbehave -DartifactId=test -DgroupId=com.vates -Dpackage=com.vates.test 
+>echo "\* description	The description of the archetype." 
+>echo "\* " 
+>echo "\* mvn clean install -DstoryFilter=native.story" 
+>echo "\* mvn clean install -Dmeta.filter=native" 
+>echo "\* mvn clean install -DstoryFilter=native.story -Dmeta.filter=native" 
+>echo "\* mvn eclipse:eclipse" 
+>echo "\* mvn idea:idea" 
+>echo "\* Linux MAVEN_OPTS=\"-Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005\";" 
+>echo "\* Linux export MAVEN_OPTS" 
+>echo "\* Windows set MAVEN_OPTS=\\\"-Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000\";" 
+>echo 
+"\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*" 
+> mvn archetype:generate -Dfilter=org.jbehave:jbehave -DartifactId=test -DgroupId=com.vates -Dpackage=com.vates.test 
 -Dversion=1.0 -DinteractiveMode=true
-cd test && mvn clean && mvn install
-Y
+> cd test && mvn clean && mvn install
+> Y
 
