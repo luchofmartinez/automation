@@ -79,12 +79,15 @@ visualiza en la siguiente imagen:
 ## Pagina de como instalar docker en windows
 Link: <https://docs.docker.com/docker-for-windows/install>
 
-## Selenium.
-# Que es selenium IDE?
+# Para usar caracteres de escape
+https://www.freeformatter.com/html-escape.html
+
+# Selenium.
+## Que es selenium IDE?
 Es un entorno de pruebas de software para aplicaciones en la cual provee una herramienta que graba y reproduce los pasos que se 
 realizarian en una prueba manual.
 
-# Que es selenium Web Driver?
+## Que es selenium Web Driver?
 Selenium Web Driver es un controlador para navegadores web, donde fue dise&ntilde;ada para enviar comandos a los navegadores para 
 ejecutar cada sentencia (Step)
 
