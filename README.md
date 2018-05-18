@@ -71,7 +71,7 @@ SSH (Secure shell), protocolo y programa que lo implementa y sirve para acceder 
 ## Informacion sobre docker - 
 Docker es un proyecto de c&oacute;digo abierto que automatiza el despliegue de aplicaciones dentro de contenedores de software, proporcionando una capa adicional de abstracci&oacute;n y automatizaci&oacute;n de Virtualizaci&oacute;n a nivel de sistema operativo en Linux. Docker accede a la virtualizaci&oacute;n del kernel Linux ya sea directamente a atrav&eacute;s de la biblioteca libcontainer (disponible desde Docker 0.9), o indirectamente a atrav&eacute;s de libvirt, LXC o systemd-nspawn como se visualiza en la siguiente imagen: 
 
-![Docker](/images/docker01.png)
+![Docker](/images/docker-vm-difference.png)
 
 ## Pagina de como instalar docker en windows
 Link: <https://docs.docker.com/docker-for-windows/install>
