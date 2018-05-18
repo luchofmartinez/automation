@@ -108,9 +108,9 @@ https://es.wikipedia.org/wiki/Plain_Old_Java_Object
 
 >echo 
 "\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*"
-
+>
 >echo "\* Create a proyect with mvn and archetype:jbehave" 
-
+>
 >echo "\* groupId	Company." 
 
 >echo "\* artifactId	Projet." 
