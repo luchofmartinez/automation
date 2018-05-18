@@ -1,15 +1,15 @@
 # Version Control Software - Ventajas y desventajas
 
 ## Mercurial
-- *Ventajas*: Sistema de control de versiones distribuido. Escalable y adaptable al tama駉 y exigencias del proyecto.
+- *Ventajas*: Sistema de control de versiones distribuido. Escalable y adaptable al tama&ntilde;o y exigencias del proyecto.
 
-- *Desventajas*: Pocas caracteristicas a馻didas por default. La comunidad de desarrollo es muy peque馻.
+- *Desventajas*: Pocas caracteristicas a&ntilde;adidas por default. La comunidad de desarrollo es muy peque&ntilde;a.
 
 
 ## SVN
-- *Ventajas*: Sistema de control de versiones centralizado. Al realizar operaciones de sincronizaci髇 entre los datos de los programas clientes y el servidor SVN s髄o se transmiten aquellos archivos que han sufrido cambios, no todos los archivos.
+- *Ventajas*: Sistema de control de versiones centralizado. Al realizar operaciones de sincronizaci&oacute;n entre los datos de los programas clientes y el servidor SVN s&oacute;lo se transmiten aquellos archivos que han sufrido cambios, no todos los archivos.
 
-- *Desventajas*: El manejo de cambio de nombres de archivos no es completo. Lo maneja como la suma de una operaci髇 de copia y una de borrado. El manejo de archivos binarios los trata internamente como si fuera de texto no como de Subversion.
+- *Desventajas*: El manejo de cambio de nombres de archivos no es completo. Lo maneja como la suma de una operaci&oacute;n de copia y una de borrado. El manejo de archivos binarios los trata internamente como si fuera de texto no como de Subversion.
 
 ## GIT
 - *Ventajas*: Sistema de control de versiones distribuido. Se trabaja directamente de forma local con los archivos del repositorio aun cuando no tengas una conexion a internet. La velocidad de subida de los archivos es rapida. Se trabaja con los equipos de manera mas facil.
@@ -21,25 +21,26 @@
 
 
 - GitHub
---**Ventaja**: Gratuita con cantidad ilimitado de usuarios colaboradores. Compartir: El c骴igo fuente del proyecto no s髄o se puede copiar con Git, tambi閚 se puede descargar como archivo.
---**Desventaja**: El servicio no es completamente gratuito. Para acceder a todas las funciones de GitHub, se debe actualizar a un usuario Premium. Limitaciones de tama駉. Los archivos no pueden ser mayores a 100 MB mientras que el repositorio puede alojar 1 GB de informaci髇.
+--**Ventaja**: Gratuita con cantidad ilimitado de usuarios colaboradores. Compartir: El c&oacute;digo fuente del proyecto no s&oacute;lo se puede copiar con Git, tambi&eacute;n se puede descargar como archivo.
+
+--**Desventaja**: El servicio no es completamente gratuito. Para acceder a todas las funciones de GitHub, se debe actualizar a un usuario Premium. Limitaciones de tama&ntilde;o. Los archivos no pueden ser mayores a 100 MB mientras que el repositorio puede alojar 1 GB de informaci&oacute;n.
 
 - BitBucket: 
 --**Ventaja**: Gratuita con cantidad ilimitada de repositorios. Usa Git pero tambien es compatible con Mercurial. Condiciones especiales para estudiantes y profesores.
---**Desventaja**: Limitada por la cantidad de usuarios colaboradores (Maximo 5). No es de c骴igo abierto, pero admite proyectos de c骴igo abierto.
+--**Desventaja**: Limitada por la cantidad de usuarios colaboradores (Maximo 5). No es de c&oacute;digo abierto, pero admite proyectos de c&oacute;digo abierto.
 
 - GitLab:
---**Ventajas**: opera bajo una licencia de c骴igo abierto. Seguimiento de errores y edici髇 de c骴igo basado en la web.
---**Desventajas**: Interface relativamente lenta. Frecuentes problemas t閏nicos con los repositorios
+--**Ventajas**: opera bajo una licencia de c&oacute;digo abierto. Seguimiento de errores y edici&oacute;n de c&oacute;digo basado en la web.
+--**Desventajas**: Interface relativamente lenta. Frecuentes problemas t&eacute;cnicos con los repositorios
 
 
 ## Requerimientos
-> Git (Versionador de c骴igo)
+> Git (Versionador de c&oacute;digo)
 
-## Sistema de integraci髇 continua
-- **Jenkins**: Herramienta de c骴igo abierto desarrollada en Java. Usa una gran variedad de plugins. Soporta herramientas de control de versiones como CVS, Subversion(SVN), Git, Mercurial y ejecuta proyectos basados como Apache Maven.
+## Sistema de integraci&oacute;n continua
+- **Jenkins**: Herramienta de c&oacute;digo abierto desarrollada en Java. Usa una gran variedad de plugins. Soporta herramientas de control de versiones como CVS, Subversion(SVN), Git, Mercurial y ejecuta proyectos basados como Apache Maven.
 - **Bamboo**: Presta servicio tanto de nube como de instalacion. Es gratis solamente por 30 dias y luego de eso ofrece planes para equipos grandes y chicos. Es una herramiento de Atlassian y es de facil importar configuraciones de JIRA y Bitbucket
-- **Hudson**:  Herramienta de c骴igo abierto desarrollada en Java basada en Servlets como Tomcat y GlassFish. Trabaja con herramientas de control de versiones como CVS, Subversion (SVN)y Git
+- **Hudson**:  Herramienta de c&oacute;digo abierto desarrollada en Java basada en Servlets como Tomcat y GlassFish. Trabaja con herramientas de control de versiones como CVS, Subversion (SVN)y Git
 
 ## Comandos GIT 
 - GIT STATUS
@@ -53,7 +54,9 @@ http://ndpsoftware.com/git-cheatsheet.html#loc=stash;
 ## como clono el repo en ssh
 Mediante el comando: 
 > git clone ssh://user@server/project.git
-贸
+
+&oacute;
+
 Tambien se puede prescindir del protocolo, Git asume que se esta usando 
 el protocolo SSH y el usuario conectado en ese momento.
 
@@ -63,17 +66,11 @@ Ejemplo: imagen de las claves SSH generadas
 ![GitHub Image](/images/github01.png)
 
 ## que es ssh
-SSH (Secure shell), protocolo y programa que lo implementa y sirve para acceder servidores privados a trav閟 de una puerta trasera, permitiendo manejar por completo el servidor mediante un int閞prete de comandos. Tambien nos permite copiar datos de forma segura (tanto archivos sueltos como simular sesiones FTP cifradas), gestionar claves RSA para no escribir claves al conectar a los dispositivos y pasar los datos de cualquier otra aplicaci髇 por un canal seguro tunelizado mediante SSH.
+SSH (Secure shell), protocolo y programa que lo implementa y sirve para acceder servidores privados a trav&eacute;s de una puerta trasera, permitiendo manejar por completo el servidor mediante un int&eacute;rprete de comandos. Tambien nos permite copiar datos de forma segura (tanto archivos sueltos como simular sesiones FTP cifradas), gestionar claves RSA para no escribir claves al conectar a los dispositivos y pasar los datos de cualquier otra aplicaci&oacute;n por un canal seguro tunelizado mediante SSH.
 
 ## Informacion sobre docker - 
-Docker es un proyecto de c贸digo abierto que automatiza el despliegue de 
-aplicaciones dentro de contenedores de software, proporcionando una capa 
-adicional de abstracci贸n y automatizaci贸n de Virtualizaci贸n a nivel de 
-sistema operativo en Linux.
-Docker accede a la virtualizaci贸n del kernel Linux ya sea directamente a 
-trav茅s de la biblioteca libcontainer (disponible desde Docker 0.9), o 
-indirectamente a trav茅s de libvirt, LXC o systemd-nspawn como se 
-visualiza en la siguiente imagen: 
+Docker es un proyecto de c&oacute;digo abierto que automatiza el despliegue de aplicaciones dentro de contenedores de software, proporcionando una capa adicional de abstracci&oacute;n y automatizaci&oacute;n de Virtualizaci&oacute;n a nivel de sistema operativo en Linux. Docker accede a la virtualizaci&oacute;n del kernel Linux ya sea directamente a atrav&eacute;s de la biblioteca libcontainer (disponible desde Docker 0.9), o indirectamente a atrav&eacute;s de libvirt, LXC o systemd-nspawn como se visualiza en la siguiente imagen: 
+
 ![Docker](/images/docker01.png)
 
 ## Pagina de como instalar docker en windows
@@ -92,14 +89,14 @@ Selenium Web Driver es un controlador para navegadores web, donde fue dise&ntild
 ejecutar cada sentencia (Step)
 
 ## Maven.
-##### 	縌ue es Maven?
+##### 	&iquest;Que es Maven?
 ##### 	Como instalar Maven.
-##### 	縌ue version de Maven tengo instalada?
+##### 	&iquest;Que version de Maven tengo instalada?
 ##### 	Ciclo de Vida.
-##### 	縌ue son archetype?
+##### 	&iquest;Que son archetype?
 
 ## POM.
-##### 	縌ue es Maven?
+##### 	&iquest;Que es Maven?
 ##### 	Como agregar una nueva dependencia.
 
 ## Debug Remoto.
@@ -141,11 +138,9 @@ https://es.wikipedia.org/wiki/Plain_Old_Java_Object
 >
 >echo "\* Windows set MAVEN_OPTS=\\\"-Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000\";" 
 >
->echo 
-"\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*" 
+>echo "\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*" 
 >
-> mvn archetype:generate -Dfilter=org.jbehave:jbehave -DartifactId=test -DgroupId=com.vates -Dpackage=com.vates.test 
--Dversion=1.0 -DinteractiveMode=true
+> mvn archetype:generate -Dfilter=org.jbehave:jbehave -DartifactId=test -DgroupId=com.vates -Dpackage=com.vates.test -Dversion=1.0 -DinteractiveMode=true
 >
 > cd test && mvn clean && mvn install
 >
