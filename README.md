@@ -138,11 +138,16 @@ https://es.wikipedia.org/wiki/Plain_Old_Java_Object
 >echo "\* Linux MAVEN_OPTS=\"-Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005\";" 
 >
 >echo "\* Linux export MAVEN_OPTS" 
+>
 >echo "\* Windows set MAVEN_OPTS=\\\"-Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000\";" 
+>
 >echo 
 "\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*" 
+>
 > mvn archetype:generate -Dfilter=org.jbehave:jbehave -DartifactId=test -DgroupId=com.vates -Dpackage=com.vates.test 
 -Dversion=1.0 -DinteractiveMode=true
+>
 > cd test && mvn clean && mvn install
+>
 > Y
 
