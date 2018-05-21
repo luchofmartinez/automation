@@ -117,13 +117,14 @@ Es el encargado de almacenar toda la informaci&oacute;n para su correcta gesti&o
 dependencias, etc.
 
 ##### 	Como agregar una nueva dependencia.
-Para agregar una nueva dependencia hay que abrir el archivo xml POM y entre el tag <dependencies> agrega la dependencia
+Para agregar una nueva dependencia hay que abrir el archivo xml POM y entre el tag &lt;dependencies&gt; agrega la dependencia
 
-``dependency
-``groupId
-<artifactId></artifactId>
-<version></version>
-</dependency>
+&lt;dependency&gt;
+      &lt;groupId&gt;junit&lt;/groupId&gt;
+      &lt;artifactId&gt;junit&lt;/artifactId&gt;
+      &lt;version&gt;4.0&lt;/version&gt;
+&lt;/dependency&gt;
+
 
 ## Debug Remoto.
 https://es.wikipedia.org/wiki/Plain_Old_Java_Object
