@@ -129,7 +129,6 @@ Para agregar una nueva dependencia hay que abrir el archivo xml POM y entre el t
 
 &lt;/dependency&gt;
 
-
 ## Debug Remoto.
 https://es.wikipedia.org/wiki/Plain_Old_Java_Object
 
