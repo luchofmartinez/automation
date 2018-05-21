@@ -119,8 +119,8 @@ dependencias, etc.
 ##### 	Como agregar una nueva dependencia.
 Para agregar una nueva dependencia hay que abrir el archivo xml POM y entre el tag <dependencies> agrega la dependencia
 
-<dependency>
-<groupId></groupId>
+``dependency
+``groupId
 <artifactId></artifactId>
 <version></version>
 </dependency>
