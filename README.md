@@ -85,19 +85,45 @@ Es un entorno de pruebas de software para aplicaciones en la cual provee una her
 realizarian en una prueba manual.
 
 ## Que es selenium Web Driver?
-Selenium Web Driver es un controlador para navegadores web, donde fue dise&ntilde;ada para enviar comandos a los navegadores para 
-ejecutar cada sentencia (Step)
+Selenium Web Driver implementa a través de un controlador del navegador específico para cada navegador que envía los comandos y trae los resultados de regreso.
 
 ## Maven.
 ##### 	&iquest;Que es Maven?
+Es una herramienta de software para la gestión y construcción de proyectos Java, tiene un modelo de configuración de construcción más 
+simple, basado en un formato XML. Maven utiliza un Project Object Model (POM) para describir el proyecto de software a construir, sus 
+dependencias de otros módulos y componentes externos, y el orden de construcción de los elementos. Viene con objetivos predefinidos 
+para realizar ciertas tareas claramente definidas, como la compilación del código y su empaquetado.
+
 ##### 	Como instalar Maven.
+1. Descargar maven <https://maven.apache.org/download.cgi>
+2. Descomprimir
+3. Definir las variables de entorno (MS_HOME) con la ruta de donde fue descomprimido
+4. Validar que maven funciona con el comando mvn -v
+
 ##### 	&iquest;Que version de Maven tengo instalada?
+Para saber que version de Maven tengo instalada se utiliza el comando: mvn -v
+
 ##### 	Ciclo de Vida.
+
+
 ##### 	&iquest;Que son archetype?
+Es un patr&oacute;n o modelo original sobre el que pueden desarrollar todas aquellas cosas que son de un mismo tipo. Puede decirse que 
+son plantillas, parametrizadas o configuradas para utilizar determinadas tecnolog&iacute;as, que los programadores utilizan como base 
+para escribir y organizar el c&oacute;digo de la aplicaci&oacute;n.
 
 ## POM.
-##### 	&iquest;Que es Maven?
+##### 	&iquest;Que es POM?
+Es el encargado de almacenar toda la informaci&oacute;n para su correcta gesti&oacute;n por ejemplo grupo, versi&oacute;n, 
+dependencias, etc.
+
 ##### 	Como agregar una nueva dependencia.
+Para agregar una nueva dependencia hay que abrir el archivo xml POM y entre el tag <dependencies> agrega la dependencia
+
+<dependency>
+<groupId></groupId>
+<artifactId></artifactId>
+<version></version>
+</dependency>
 
 ## Debug Remoto.
 https://es.wikipedia.org/wiki/Plain_Old_Java_Object
