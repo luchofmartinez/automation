@@ -120,9 +120,13 @@ dependencias, etc.
 Para agregar una nueva dependencia hay que abrir el archivo xml POM y entre el tag &lt;dependencies&gt; agrega la dependencia
 
 &lt;dependency&gt;
+
       &lt;groupId&gt;junit&lt;/groupId&gt;
+
       &lt;artifactId&gt;junit&lt;/artifactId&gt;
+
       &lt;version&gt;4.0&lt;/version&gt;
+
 &lt;/dependency&gt;
 
 
