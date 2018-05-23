@@ -176,3 +176,21 @@ https://es.wikipedia.org/wiki/Plain_Old_Java_Object
 >
 > Y
 
+
+
+
+
+Tarea:
+
+formulario de carga a utilizar http://automationcourse.herokuapp.com/crud.html
+
+1) crear un .story en el proyecto en github que contenga todos los pasos necesario para poder completar la carga del formulario.
+2) mapear los step creados, en java sin ninguna funcionalidad.
+3) corroborar que no tenga errores el analisis estatico de codigo.
+4) intentar filtrar por story ayuda de otro proyecto
+
+return new InstanceStepsFactory(configuration(), new NativeSteps(), new HybridSteps(), new ApiDemoSteps());
+
+
+pagina para estudiar http://jbehave.org/
+
