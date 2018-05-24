@@ -4,15 +4,17 @@ import org.jbehave.core.annotations.*;
 
 public class MySteps {
 
-
     @Given("user logged in")
     public void givenUserLoggedIn() {
-        // PENDING
+        //OpenBrowser();
+        //ValidateBrowserOpen()
+        //InsertURL
+        //LogInUser(Number,Password)
     }
 
     @Given("select <product>")
     public void givenSelectproduct(@Named("product") String productId) {
-        // PENDING
+        // SelectProductCatalog
     }
 
     @Given("select \"Cambiar el equipo de mi Linea\"")
