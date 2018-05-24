@@ -1,24 +1,26 @@
-
 Meta:
 @application CWA
-@flow scheduling
-@process Alerts Preferences
-@project Baseline
-@user Flight Attendant
-@storyId US7590
-@type hybrid
+@flow Cater
+@process Register order
+@project ECommerce
+@user Logged in
+@FormaPago
+@Contrafactura
 
 Narrative:
-As a Flight Attendant
-I want to activate 'Send me alerts'
-So that I can be informed when there are updates from scheduling
+As a user logged in
+I want to register an order with Contrafactura in 6 installments
+So you can see the order summary
 
-Scenario: A scenario with some pending steps
+Scenario: Register an order with Contrafactura in 6 installments
 
-Given I am a pending step
-Given I am still pending step
-Given I am still pending step
-Given I am still pending step
-Given I am still pending step
-When a good soul will implement me
-Then I shall be happy
+Given user logged
+and select imported equipment
+and no change of plan
+and add to cart
+and Go to personal data
+and Go to payment methods
+When contrafactura is enabled
+Then select contrafactura option
+and select 6 installments
+and register order
