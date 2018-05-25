@@ -5,6 +5,9 @@ import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 public final class TestSteps extends Test {
 
     @Given("I open the web page")
@@ -59,6 +62,7 @@ public final class TestSteps extends Test {
 
     @Then("All is ok")
     public final void stepAllIsOk() {
+        assertThat('1', equalTo('1'));
         allIsOk();
     }
 }
