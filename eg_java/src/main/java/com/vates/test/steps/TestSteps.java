@@ -3,7 +3,6 @@ package com.vates.test.steps;
 import com.vates.test.page.TestPage;
 import org.jbehave.core.annotations.*;
 
-import static java.lang.Thread.sleep;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -87,11 +86,7 @@ public final class TestSteps extends TestPage {
 
     @AfterScenario
     public void afterScenario() {
-        try {
-            sleep(900);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        sleepFor();
         getDriver().quit();
         System.out.println("AfterScenario ...");
     }

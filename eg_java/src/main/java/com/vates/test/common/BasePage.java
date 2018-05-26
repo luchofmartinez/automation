@@ -6,6 +6,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
+import static java.lang.Thread.sleep;
+
 /**
  * Represent the Base page of the application.
  *
@@ -14,6 +16,7 @@ import java.util.concurrent.TimeUnit;
 public class BasePage {
 
     private WebDriver driver;
+    private static final long WAIT_MILLISECONDS = 1000;
     private static final int IMPLICITLY_WAIT_SECONDS = 10;
     private static final String DRIVER_KEY = "webdriver.gecko.driver";
     private static final String DRIVER_VALUE = "./src/main/resources/driver/geckodriver";
@@ -53,6 +56,17 @@ public class BasePage {
      */
     protected final void sendKeys(By element, int index, String text) {
         driver.findElements(element).get(index).sendKeys(text);
+    }
+
+    /**
+     * To Define.
+     */
+    protected void sleepFor() {
+        try {
+            sleep(WAIT_MILLISECONDS);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
