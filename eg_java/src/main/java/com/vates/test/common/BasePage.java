@@ -1,4 +1,4 @@
-package com.vates.test.page;
+package com.vates.test.common;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,37 +14,49 @@ import java.util.concurrent.TimeUnit;
 public class BasePage {
 
     private WebDriver driver;
+    private static final int IMPLICITLY_WAIT_SECONDS = 10;
+    private static final String WEB_PAGE = "http://automationcourse.herokuapp.com/crud.html";
+
+
+    /**
+     * To Define.
+     */
+    protected final void createDriver() {
+        System.setProperty("webdriver.gecko.driver", "./src/main/resources/driver/geckodriver");
+        setDriver(new FirefoxDriver());
+        driver.manage().timeouts().implicitlyWait(IMPLICITLY_WAIT_SECONDS, TimeUnit.SECONDS);
+    }
 
     /**
      * To Define.
      */
     protected final void openPage() {
-        System.setProperty("webdriver.gecko.driver", "./src/main/resources/driver/geckodriver");
-        setDriver(new FirefoxDriver());
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("http://automationcourse.herokuapp.com/crud.html");
+        driver.get(WEB_PAGE);
     }
 
     /**
      * To Define.
+     *
      * @param element To Define.
      */
-    final void clickButton(By element) {
+    protected final void clickButton(By element) {
         driver.findElement(element).click();
     }
 
     /**
      * To Define.
+     *
      * @param element To Define.
-     * @param index To Define.
-     * @param text To Define.
+     * @param index   To Define.
+     * @param text    To Define.
      */
-    final void sendKeys(By element, int index, String text) {
+    protected final void sendKeys(By element, int index, String text) {
         driver.findElements(element).get(index).sendKeys(text);
     }
 
     /**
      * To Define.
+     *
      * @param driver To Define.
      */
     private void setDriver(WebDriver driver) {
@@ -54,7 +66,7 @@ public class BasePage {
     /**
      * To Define.
      */
-    final WebDriver getDriver() {
+    protected final WebDriver getDriver() {
         return driver;
     }
 }
