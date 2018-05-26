@@ -1,32 +1,69 @@
 package com.claro.ecommerce.steps;
 
-import org.jbehave.core.annotations.Given;
-import org.jbehave.core.annotations.Pending;
-import org.jbehave.core.annotations.Then;
-import org.jbehave.core.annotations.When;
+import org.jbehave.core.annotations.*;
 
 public class MySteps {
 
-    @Given("I am a pending step")
-    public void GoToWayToPay(){
-
+    @Given("user logged in")
+    public void givenUserLoggedIn() {
+        //OpenBrowser();
+        //ValidateBrowserOpen()
+        //InsertURL
+        //LogInUser(Number,Password)
     }
 
-    @Given("I am still pending step")
-    @Pending
-    public void givenIAmStillPendingStep() {
+    @Given("select <product>")
+    public void givenSelectproduct(@Named("product") String productId) {
+        // SelectProductCatalog
+    }
+
+    @Given("select \"Cambiar el equipo de mi Linea\"")
+    public void givenSelectCambiarElEquipoDeMiLinea() {
         // PENDING
     }
 
-    @When("a good soul will implement me")
-    @Pending
-    public void whenAGoodSoulWillImplementMe() {
+    @Given("select current plan")
+    public void givenSelectCurrentPlan() {
         // PENDING
     }
 
-    @Then("I shall be happy")
-    @Pending
-    public void thenIShallBeHappy() {
+    @Given("click in add to cart")
+    public void givenClickInAddToCart() {
+        // PENDING
+    }
+
+    @Given("click in btnContinueCart")
+    public void givenClickInBtnContinueCart() {
+        // PENDING
+    }
+
+    @Given("check terms and conditions")
+    public void givenCheckTermsAndConditions() {
+        // PENDING
+    }
+
+    @Given("click in btnContinuePersonalData")
+    public void givenClickInBtnContinuePersonalData() {
+        // PENDING
+    }
+
+    @When("\"Contrafactura\" is enabled")
+    public void whenContrafacturaIsEnabled() {
+        // PENDING
+    }
+
+    @When("select \"Contrafactura\" option")
+    public void whenSelectContrafacturaOption() {
+        // PENDING
+    }
+
+    @When("select <number_of_installments> installments")
+    public void whenSelectnumber_of_installmentsInstallments(@Named("number_of_installments") int installments) {
+        // PENDING
+    }
+
+    @Then("register order")
+    public void thenRegisterOrder() {
         // PENDING
     }
 }
