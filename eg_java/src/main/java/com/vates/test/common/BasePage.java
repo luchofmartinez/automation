@@ -15,14 +15,15 @@ public class BasePage {
 
     private WebDriver driver;
     private static final int IMPLICITLY_WAIT_SECONDS = 10;
+    private static final String DRIVER_KEY = "webdriver.gecko.driver";
+    private static final String DRIVER_VALUE = "./src/main/resources/driver/geckodriver";
     private static final String WEB_PAGE = "http://automationcourse.herokuapp.com/crud.html";
-
 
     /**
      * To Define.
      */
     protected final void createDriver() {
-        System.setProperty("webdriver.gecko.driver", "./src/main/resources/driver/geckodriver");
+        System.setProperty(DRIVER_KEY, DRIVER_VALUE);
         setDriver(new FirefoxDriver());
         driver.manage().timeouts().implicitlyWait(IMPLICITLY_WAIT_SECONDS, TimeUnit.SECONDS);
     }

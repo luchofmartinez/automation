@@ -19,9 +19,9 @@ public class TestPage extends BasePage {
     private static final int PASSWORD_INPUT_INDEX = 6;
     private static final int COMMENT_TEXTAREA_INDEX = 0;
     private static final int ALPHANUMERIC_INPUT_INDEX = 3;
-    private static final By SELECT = new By.ByTagName("select");
-    private static final By OPTION = new By.ByTagName("option");
     private static final By INPUT = new By.ByCssSelector("input");
+    private static final By SELECT = new By.ByCssSelector("select");
+    private static final By OPTION = new By.ByCssSelector("option");
     private static final By TEXTAREA = new By.ByCssSelector("textarea");
     private static final String BUTTON_CRUD = ".//button[contains(.,\'%s\')]";
     private static final String BUTTON_DEMO_MODAL = ".//button[contains(.,'%s')]";
@@ -89,7 +89,12 @@ public class TestPage extends BasePage {
     protected final void selectOption(String value) {
         WebElement select = getDriver().findElement(SELECT);
         List<WebElement> allOptions = select.findElements(OPTION);
-        allOptions.get(2).click();
+        for (WebElement option : allOptions) {
+            if (option.getText().equals(value)) {
+                option.click();
+                break;
+            }
+        }
     }
 
     /**
@@ -110,12 +115,4 @@ public class TestPage extends BasePage {
     protected final void clickButton(String value) {
         clickButton(new By.ByXPath(String.format(BUTTON_CRUD, value)));
     }
-
-    /**
-     * To Define.
-     */
-    protected final void allIsOk() {
-        System.out.println("allIsOk");
-    }
-
 }

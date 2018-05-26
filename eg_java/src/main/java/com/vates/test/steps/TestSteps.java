@@ -83,7 +83,6 @@ public final class TestSteps extends TestPage {
     @Then("All is ok")
     public final void stepAllIsOk() {
         assertThat('1', equalTo('1'));
-        allIsOk();
     }
 
     @AfterScenario
