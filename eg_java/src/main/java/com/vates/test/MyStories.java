@@ -1,12 +1,10 @@
 package com.vates.test;
 
-import java.text.SimpleDateFormat;
-import java.util.List;
-
-import com.vates.test.steps.TestSteps;
+import com.vates.test.steps.CrudSteps;
 import org.jbehave.core.Embeddable;
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.configuration.MostUsefulConfiguration;
+import org.jbehave.core.embedder.Embedder;
 import org.jbehave.core.i18n.LocalizedKeywords;
 import org.jbehave.core.io.CodeLocations;
 import org.jbehave.core.io.LoadFromClasspath;
@@ -21,11 +19,13 @@ import org.jbehave.core.steps.ParameterConverters;
 import org.jbehave.core.steps.ParameterConverters.DateConverter;
 import org.jbehave.core.steps.ParameterConverters.ExamplesTableConverter;
 
+import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
+import java.util.List;
+
 import static org.jbehave.core.io.CodeLocations.codeLocationFromClass;
-import static org.jbehave.core.reporters.Format.CONSOLE;
-import static org.jbehave.core.reporters.Format.HTML;
-import static org.jbehave.core.reporters.Format.TXT;
-import static org.jbehave.core.reporters.Format.XML;
+import static org.jbehave.core.reporters.Format.*;
 
 /**
  * <p>
@@ -33,10 +33,10 @@ import static org.jbehave.core.reporters.Format.XML;
  * </p>
  * <p>
  * Stories are specified in classpath and correspondingly the {@link LoadFromClasspath} story loader is configured.
- * </p> 
+ * </p>
  */
 public class MyStories extends JUnitStories {
-    
+
     public MyStories() {
         configuredEmbedder().embedderControls().doGenerateViewAfterStories(true).doIgnoreFailureInStories(true)
                 .doIgnoreFailureInView(true).useThreads(2).useStoryTimeoutInSecs(60);
@@ -53,24 +53,38 @@ public class MyStories extends JUnitStories {
         parameterConverters.addConverters(new DateConverter(new SimpleDateFormat("yyyy-MM-dd")),
                 new ExamplesTableConverter(examplesTableFactory));
         return new MostUsefulConfiguration()
-            .useStoryLoader(new LoadFromClasspath(embeddableClass))
-            .useStoryParser(new RegexStoryParser(examplesTableFactory)) 
-            .useStoryReporterBuilder(new StoryReporterBuilder()
-                .withCodeLocation(CodeLocations.codeLocationFromClass(embeddableClass))
-                .withDefaultFormats()
-                .withFormats(CONSOLE, TXT, HTML, XML))
-            .useParameterConverters(parameterConverters);
+                .useStoryLoader(new LoadFromClasspath(embeddableClass))
+                .useStoryParser(new RegexStoryParser(examplesTableFactory))
+                .useStoryReporterBuilder(new StoryReporterBuilder()
+                        .withCodeLocation(CodeLocations.codeLocationFromClass(embeddableClass))
+                        .withDefaultFormats()
+                        .withFormats(CONSOLE, TXT, HTML, XML))
+                .useParameterConverters(parameterConverters);
     }
 
     @Override
     public InjectableStepsFactory stepsFactory() {
-        return new InstanceStepsFactory(configuration(), new TestSteps());
+        return new InstanceStepsFactory(configuration(), new CrudSteps());
     }
 
     @Override
     protected List<String> storyPaths() {
-        return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/*.story", "**/excluded*.story");
-                
+        final URL searchIn;
+        final String include, exclude, storyFilterProperties;
+        storyFilterProperties = System.getProperty("storyFilter", "*.story");
+        searchIn = codeLocationFromClass(this.getClass());
+        include = "**/" + storyFilterProperties;
+        exclude = "**/excluded*.story";
+        return new StoryFinder().findPaths(searchIn, include, exclude);
     }
-        
+
+    @Override
+    public Embedder configuredEmbedder() {
+        final Embedder embedder = super.configuredEmbedder();
+        String metaFilter = System.getProperty("meta.filter");
+        if (metaFilter != null) {
+            embedder.useMetaFilters(Arrays.asList(new String[]{metaFilter}));
+        }
+        return embedder;
+    }
 }
