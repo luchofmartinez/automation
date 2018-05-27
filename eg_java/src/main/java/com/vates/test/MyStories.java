@@ -80,10 +80,11 @@ public class MyStories extends JUnitStories {
 
     @Override
     public Embedder configuredEmbedder() {
-        final Embedder embedder = super.configuredEmbedder();
+        final Embedder embedder;
+        embedder = super.configuredEmbedder();
         String metaFilter = System.getProperty("meta.filter");
         if (metaFilter != null) {
-            embedder.useMetaFilters(Arrays.asList(new String[]{metaFilter}));
+            embedder.useMetaFilters(Arrays.asList(metaFilter));
         }
         return embedder;
     }

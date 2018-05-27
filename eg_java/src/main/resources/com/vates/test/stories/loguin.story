@@ -27,7 +27,7 @@ And I click on "Option 2" button option
 And I click on "Option 3" button option
 And I click on "Option 4" button option
 Then All is ok
-And Example how create a:
+And Example how create a table:
     | Area of focus | Story | Definitions |
     | business      |   yes |          no |
     | testing       |   yes |       maybe |
