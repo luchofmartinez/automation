@@ -1,7 +1,7 @@
 
 Scenario: Open the application form
 
-Given Join the web page http://automationcourse.herokuapp.com/crud.html
+Given Join the web page
 When click on button "Launch demo modal"
 Then open the application form
 
