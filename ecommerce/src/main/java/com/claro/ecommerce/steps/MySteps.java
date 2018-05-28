@@ -4,66 +4,97 @@ import org.jbehave.core.annotations.*;
 
 public class MySteps {
 
-    @Given("user logged in")
-    public void givenUserLoggedIn() {
-        //OpenBrowser();
-        //ValidateBrowserOpen()
-        //InsertURL
-        //LogInUser(Number,Password)
-    }
-
-    @Given("select <product>")
-    public void givenSelectproduct(@Named("product") String productId) {
-        // SelectProductCatalog
-    }
-
-    @Given("select \"Cambiar el equipo de mi Linea\"")
-    public void givenSelectCambiarElEquipoDeMiLinea() {
+    @Given("I am a pending step")
+    public void givenIAmAPendingStep() {
         // PENDING
     }
 
-    @Given("select current plan")
-    public void givenSelectCurrentPlan() {
+    @Given("I am still pending step")
+    public void givenIAmStillPendingStep() {
         // PENDING
     }
 
-    @Given("click in add to cart")
-    public void givenClickInAddToCart() {
+    @When("a good soul will implement me")
+    public void whenAGoodSoulWillImplementMe() {
         // PENDING
     }
 
-    @Given("click in btnContinueCart")
-    public void givenClickInBtnContinueCart() {
+    @Then("I shall be happy")
+    public void thenIShallBeHappy() {
         // PENDING
     }
 
-    @Given("check terms and conditions")
-    public void givenCheckTermsAndConditions() {
+    public void givenJoinTheWebPage() {
         // PENDING
     }
 
-    @Given("click in btnContinuePersonalData")
-    public void givenClickInBtnContinuePersonalData() {
+    @When("click on button \"Launch demo modal\"")
+    public void whenClickOnButtonLaunchDemoModal() {
         // PENDING
     }
 
-    @When("\"Contrafactura\" is enabled")
-    public void whenContrafacturaIsEnabled() {
+    @Then("open the application form")
+    public void thenOpenTheApplicationForm() {
         // PENDING
     }
 
-    @When("select \"Contrafactura\" option")
-    public void whenSelectContrafacturaOption() {
+    @Given("the form is open")
+    public void givenTheFormIsOpen() {
         // PENDING
     }
 
-    @When("select <number_of_installments> installments")
-    public void whenSelectnumber_of_installmentsInstallments(@Named("number_of_installments") int installments) {
+    @When("i complete all the form fields")
+    public void whenICompleteAllTheFormFields() {
         // PENDING
     }
 
-    @Then("register order")
-    public void thenRegisterOrder() {
+    @Then("complete \"Date to\" field")
+    public void thenCompleteDateToField() {
+        // PENDING
+    }
+
+    @Then("complete \"Date from\" field")
+    public void thenCompleteDateFromField() {
+        // PENDING
+    }
+
+    @Then("complete \"Url\" field")
+    public void thenCompleteUrlField() {
+        // PENDING
+    }
+
+    @Then("complete \"Alphanumeric\" field")
+    public void thenCompleteAlphanumericField() {
+        // PENDING
+    }
+
+    @Then("complete \"Numeric\" field")
+    public void thenCompleteNumericField() {
+        // PENDING
+    }
+
+    @Then("complete \"Email\" field")
+    public void thenCompleteEmailField() {
+        // PENDING
+    }
+
+    @Then("complete \"Password\" field")
+    public void thenCompletePasswordField() {
+        // PENDING
+    }
+
+    @Then("select a option in \"Select\" field")
+    public void thenSelectAOptionInSelectField() {
+        // PENDING
+    }
+
+    @Then("select a image in \"File\" field")
+    public void thenSelectAImageInFileField() {
+        // PENDING
+    }
+
+    @Then("complete \"Comment\" field")
+    public void thenCompleteCommentField() {
         // PENDING
     }
 }
