@@ -2,6 +2,7 @@ package com.claro.ecommerce;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Properties;
 
 import org.jbehave.core.Embeddable;
 import org.jbehave.core.configuration.Configuration;
@@ -12,6 +13,7 @@ import org.jbehave.core.io.LoadFromClasspath;
 import org.jbehave.core.io.StoryFinder;
 import org.jbehave.core.junit.JUnitStories;
 import org.jbehave.core.model.ExamplesTableFactory;
+import org.jbehave.core.parsers.RegexPrefixCapturingPatternParser;
 import org.jbehave.core.parsers.RegexStoryParser;
 import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.InjectableStepsFactory;
@@ -59,7 +61,8 @@ public class MyStories extends JUnitStories {
                 .withCodeLocation(CodeLocations.codeLocationFromClass(embeddableClass))
                 .withDefaultFormats()
                 .withFormats(CONSOLE, TXT, HTML, XML))
-            .useParameterConverters(parameterConverters);
+            .useParameterConverters(parameterConverters)
+                .useStepPatternParser(new RegexPrefixCapturingPatternParser("@"));
     }
 
     @Override
@@ -70,6 +73,5 @@ public class MyStories extends JUnitStories {
     @Override
     protected List<String> storyPaths() {
         return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/*.story", "**/excluded*.story");
-
     }
 }
