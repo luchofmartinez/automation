@@ -7,6 +7,6 @@ public class CrudSteps extends CrudPage {
 
     @Given("I open the web page")
     public void stepIOpenTheWebPage(){
-        
+        abrirPagina();
     }
 }
