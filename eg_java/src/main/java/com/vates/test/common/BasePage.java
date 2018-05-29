@@ -20,7 +20,7 @@ public class BasePage {
     private static final int IMPLICITLY_WAIT_SECONDS = 10;
     private static final String DRIVER_KEY = "webdriver.gecko.driver";
     private static final String DRIVER_VALUE = "./src/main/resources/driver/geckodriver";
-    private static final String WEB_PAGE = "http://automationcourse.herokuapp.com/crud.html";
+    private static final String BASE_URL = "http://automationcourse.herokuapp.com/crud.html";
 
     /**
      * To Define.
@@ -35,7 +35,7 @@ public class BasePage {
      * To Define.
      */
     protected final void openPage() {
-        driver.get(WEB_PAGE);
+        driver.get(BASE_URL);
     }
 
     /**

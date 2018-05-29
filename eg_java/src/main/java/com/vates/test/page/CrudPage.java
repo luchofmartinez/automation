@@ -3,8 +3,7 @@ package com.vates.test.page;
 import com.vates.test.common.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
-import java.util.List;
+import org.openqa.selenium.support.ui.Select;
 
 /**
  * Represent the CrudPage page of the application.
@@ -21,7 +20,6 @@ public class CrudPage extends BasePage {
     private static final int ALPHANUMERIC_INPUT_INDEX = 3;
     private static final By INPUT = new By.ByCssSelector("input");
     private static final By SELECT = new By.ByCssSelector("select");
-    private static final By OPTION = new By.ByCssSelector("option");
     private static final By TEXTAREA = new By.ByCssSelector("textarea");
     private static final String BUTTON_CRUD = ".//button[contains(.,\'%s\')]";
     private static final String BUTTON_DEMO_MODAL = ".//button[contains(.,'%s')]";
@@ -88,13 +86,7 @@ public class CrudPage extends BasePage {
      */
     protected final void selectOption(String value) {
         WebElement select = getDriver().findElement(SELECT);
-        List<WebElement> allOptions = select.findElements(OPTION);
-        for (WebElement option : allOptions) {
-            if (option.getText().equals(value)) {
-                option.click();
-                break;
-            }
-        }
+        new Select(select).selectByVisibleText(value);
     }
 
     /**
