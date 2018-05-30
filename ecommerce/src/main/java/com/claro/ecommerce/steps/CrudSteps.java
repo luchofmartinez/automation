@@ -19,61 +19,45 @@ public class CrudSteps extends CrudPage {
     }
 
     @When("I write $url in Url input field")
-    public void whenIWriteInUrlInputField(@Named("url") String url) {
+    public void stepIWriteInUrlInputField(@Named("url") String url) {
         writeUrl(url);
     }
 
     @When("I write $text in Alphanumeric input field")
-    public void whenIWriteInAlphanumericInputField(@Named("text") String text) {
+    public void stepIWriteInAlphanumericInputField(@Named("text") String text) {
         writeAlphanumeric(text);
     }
 
     @When("I write $numbers in Numeric input field")
-    public void whenIWriteInNumericInputField(@Named("Numbers") String numbers) {
+    public void stepIWriteInNumericInputField(@Named("Numbers") String numbers) {
         writeNumeric(numbers);
     }
 
     @When("I write $email in Email input field")
-    public void whenIWriteInEmailInputField(@Named("email") String email) {
+    public void stepIWriteInEmailInputField(@Named("email") String email) {
         writeEmail(email);
     }
 
     @When("I write $password in Password input field")
-    public void whenIWriteInPasswordInputField(@Named("password") String password) {
+    public void stepIWriteInPasswordInputField(@Named("password") String password) {
         writePassword(password);
     }
 
     @When("I select text $option from select field")
-    public void whenISelectTextOption03FromSelectField(@Named("option") String option) {
+    public void stepISelectTextOption03FromSelectField(@Named("option") String option) {
         selectOption(option);
     }
 
     @When("I write $comment in Comment input field")
-    public void whenIWriteInCommentInputField(@Named("comment") String comment) {
+    public void stepIWriteInCommentInputField(@Named("comment") String comment) {
         writeComment(comment);
     }
 
     @When("I click on $optionButton button option")
-    public void whenIClickOnOption1ButtonOption(@Named("optionButton") String optionButton) {
-        System.out.println("Nombre del boton: " + optionButton);
+    public void stepIClickOnOption1ButtonOption(@Named("optionButton") String optionButton) {
         clickOnOptionButton(optionButton);
     }
-/*
-    @When("I click on \"Option 2\" button option")
-    public void whenIClickOnOption2ButtonOption() {
-        clickOnOptionButton("option 2");
-    }
 
-    @When("I click on \"Option 3\" button option")
-    public void whenIClickOnOption3ButtonOption() {
-        clickOnOptionButton("option 3");
-    }
-
-    @When("I click on \"Option 4\" button option")
-    public void whenIClickOnOption4ButtonOption() {
-        clickOnOptionButton("option 4");
-    }
-*/
     @Then("All is ok")
     public void thenAllIsOk() {
         AllIsOk();
