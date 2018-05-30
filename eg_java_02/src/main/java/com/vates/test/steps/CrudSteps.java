@@ -4,7 +4,6 @@ import com.vates.test.page.CrudPage;
 import org.jbehave.core.annotations.*;
 import org.jbehave.core.model.ExamplesTable;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.pagefactory.ElementLocatorFactory;
 
 import java.util.List;
 import java.util.Map;
@@ -39,11 +38,12 @@ public final class CrudSteps extends CrudPage {
     public final void stepOpenPage() {
         openPage();
         PageFactory.initElements(getDriver(), CrudPage.class);
-   }
+        //ComplexPageObject page = new ComplexPageObject("expected title", driver);
+    }
 
-    @When("I click on \"$name\" button")
-    public final void stepClickLaunchDemo(@Named("name") String name) {
-        clickLaunchDemoModal(name);
+    @When("I click on button Launch demo modal")
+    public final void stepClickOnButtonLaunch() {
+        clickLaunchDemoModal();
     }
 
     @When("I write \"$value\" in Url input field")
@@ -81,9 +81,24 @@ public final class CrudSteps extends CrudPage {
         writeComment(value);
     }
 
-    @When("I click on \"$value\" button option")
-    public final void stepClickButton(@Named("value") String value) {
+    @When("I click on button Option 1")
+    public final void stepClickOption1() {
+        clickOption1();
+    }
 
+    @When("I click on button Option 2")
+    public final void stepClickOption2() {
+        clickOption2();
+    }
+
+    @When("I click on button Option 3")
+    public final void stepClickOption3() {
+        clickOption3();
+    }
+
+    @When("I click on button Option 4")
+    public final void stepClickOption4() {
+        clickOption4();
     }
 
     @Then("All is ok")

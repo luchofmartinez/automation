@@ -2,12 +2,8 @@ package com.vates.test.page;
 
 import com.vates.test.common.BasePage;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
-
-import java.util.List;
 
 /**
  * Represent the CrudPage page of the application.
@@ -16,42 +12,54 @@ import java.util.List;
  */
 public class CrudPage extends BasePage {
 
-    @FindBy(how = How.TAG_NAME, using = "button")
-    private static List<WebElement> temporal;
+    /**
+     * To Define.
+     */
+    public CrudPage() {
+        //PageFactory.initElements(getDriver(), this);
+    }
 
-    @FindBy(how = How.XPATH, using = ".//button[contains(.,'%s')]")
+    @FindBy(xpath = ".//button[contains(.,'Launch demo modal')]")
     private static WebElement launchDemoModal;
 
-    @FindBy(how = How.ID, using = "Url")
+    @FindBy(xpath = ".//button[contains(.,'Option 1')]")
+    private static WebElement option1;
+
+    @FindBy(xpath = ".//button[contains(.,'Option 2')]")
+    private static WebElement option2;
+
+    @FindBy(xpath = ".//button[contains(.,'Option 3')]")
+    private static WebElement option3;
+
+    @FindBy(xpath = ".//button[contains(.,'Option 4')]")
+    private static WebElement option4;
+
+    @FindBy(id = "Url")
     private static WebElement url;
 
-    @FindBy(how = How.ID, using = "Alphanumeric")
+    @FindBy(id = "Alphanumeric")
     private static WebElement alphanumeric;
 
-    @FindBy(how = How.ID, using = "Numeric")
+    @FindBy(id = "Numeric")
     private static WebElement numeric;
 
-    @FindBy(how = How.ID, using = "Email")
+    @FindBy(id = "Email")
     private static WebElement email;
 
-    @FindBy(how = How.ID, using = "Password")
+    @FindBy(id = "Password")
     private static WebElement password;
 
-    @FindBy(how = How.ID, using = "Select")
+    @FindBy(id = "Select")
     private static WebElement select;
 
-    @FindBy(how = How.ID, using = "Comment")
+    @FindBy(id = "Comment")
     private static WebElement comment;
 
     /**
      * To Define Function.
-     *
-     * @param value to define.
      */
-    protected final void clickLaunchDemoModal(final String value) {
-        (launchDemoModal.getText().replace("asdasd"))
+    protected final void clickLaunchDemoModal() {
         launchDemoModal.click();
-        temporal.get(0).getAttribute("text");
     }
 
     /**
@@ -115,5 +123,33 @@ public class CrudPage extends BasePage {
      */
     protected final void writeComment(final String value) {
         comment.sendKeys(value);
+    }
+
+    /**
+     * To Define Function.
+     */
+    protected final void clickOption1() {
+        option1.click();
+    }
+
+    /**
+     * To Define Function.
+     */
+    protected final void clickOption2() {
+        option2.click();
+    }
+
+    /**
+     * To Define Function.
+     */
+    protected final void clickOption3() {
+        option3.click();
+    }
+
+    /**
+     * To Define Function.
+     */
+    protected final void clickOption4() {
+        option4.click();
     }
 }

@@ -22,10 +22,10 @@ And I write "mail@domain.com" in Email input field
 And I write "secret" in Password input field
 And I select text "Option 03" from select field
 And I write "comment of student" in Comment input field
-And I click on "Option 1" button option
-And I click on "Option 2" button option
-And I click on "Option 3" button option
-And I click on "Option 4" button option
+And I click on button Option 1
+And I click on button Option 2
+And I click on button Option 3
+And I click on button Option 4
 Then All is ok
 And Example how create a table:
     | Area of focus | Story | Definitions |
