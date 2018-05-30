@@ -1,95 +1,90 @@
 package com.claro.ecommerce.pages;
 
+import com.claro.ecommerce.common.BasePage;
+
 /**
  * This class contains the methods defined for actions on the page
  */
-public class CrudPage {
+public class CrudPage  extends BasePage {
 
     /**
      * To define
+     *
+     * @param nameBtn to define.
      */
-    protected final void abrirPagina() {
+    protected final void clickOnModalButton(final String nameBtn) {
 
     }
 
     /**
      * To define
      *
-     * @param nameBtn
+     * @param url to define.
      */
-    protected final void clickOnModalButton(String nameBtn) {
+    protected final void writeUrl(final String url) {
 
     }
 
     /**
      * To define
      *
-     * @param url
+     * @param text to define.
      */
-    protected final void writeUrl(String url) {
+    protected final void writeAlphanumeric(final String text) {
 
     }
 
     /**
      * To define
      *
-     * @param text
+     * @param numbers to define.
      */
-    protected final void writeAlphanumeric(String text) {
+    protected final void writeNumeric(final String numbers) {
 
     }
 
     /**
      * To define
      *
-     * @param numbers
+     * @param email to define.
      */
-    protected final void writeNumeric(String numbers) {
+    protected final void writeEmail(final String email) {
 
     }
 
     /**
      * To define
      *
-     * @param email
+     * @param password to define.
      */
-    protected final void writeEmail(String email) {
+    protected final void writePassword(final String password) {
 
     }
 
     /**
      * To define
      *
-     * @param password
+     * @param optionText to define.
      */
-    protected final void writePassword(String password) {
+    protected final void selectOption(final String optionText) {
+
+    }
+
+    /**
+     * To define to define.
+     *
+     * @param comment to define.
+     */
+    protected final void writeComment(final String comment) {
 
     }
 
     /**
      * To define
      *
-     * @param optionText
+     * @param optionButton to define.
      */
-    protected final void selectOption(String optionText) {
-
-    }
-
-    /**
-     * To define
-     *
-     * @param comment
-     */
-    protected final void writeComment(String comment) {
-
-    }
-
-    /**
-     * To define
-     *
-     * @param optionButton
-     */
-    protected final void clickOnOptionButton(String optionButton) {
+    protected final void clickOnOptionButton(final String optionButton) {
 
     }
 

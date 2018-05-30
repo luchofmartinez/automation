@@ -1,11 +1,14 @@
 package com.claro.ecommerce;
 
+import java.net.URL;
 import java.text.SimpleDateFormat;
+import java.util.Arrays;
 import java.util.List;
 
 import org.jbehave.core.Embeddable;
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.configuration.MostUsefulConfiguration;
+import org.jbehave.core.embedder.Embedder;
 import org.jbehave.core.i18n.LocalizedKeywords;
 import org.jbehave.core.io.CodeLocations;
 import org.jbehave.core.io.LoadFromClasspath;
@@ -69,6 +72,23 @@ public class MyStories extends JUnitStories {
 
     @Override
     protected List<String> storyPaths() {
-        return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), "**/*.story", "**/excluded*.story");
+        final URL searchIn;
+        final String include, exclude, storyFilterProperties;
+        storyFilterProperties = System.getProperty("storyFilter", "*.story");
+        searchIn = codeLocationFromClass(this.getClass());
+        include = "**/" + storyFilterProperties;
+        exclude = "**/excluded*.story";
+        return new StoryFinder().findPaths(searchIn, include, exclude);
+    }
+
+    @Override
+    public Embedder configuredEmbedder() {
+        final Embedder embedder;
+        embedder = super.configuredEmbedder();
+        String metaFilter = System.getProperty("meta.filter");
+        if (metaFilter != null) {
+            embedder.useMetaFilters(Arrays.asList(metaFilter));
+        }
+        return embedder;
     }
 }
