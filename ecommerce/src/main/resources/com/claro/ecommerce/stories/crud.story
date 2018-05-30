@@ -17,7 +17,7 @@ Scenario: Example of common Behaviour.
 Given I open the web page
 When I click on "Launch demo modal" button
 And I write "https://www.google.com" in Url input field
-And I write "a1b2 in Alphanumeric input field
+And I write "a1b2" in Alphanumeric input field
 And I write "1234567890" in Numeric input field
 And I write "mail@domain.com" in Email input field
 And I write "secret" in Password input field
