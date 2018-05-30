@@ -14,66 +14,82 @@ public class CrudPage {
 
     /**
      * To define
+     *
+     * @param nameBtn
      */
-    protected final void clickOnModalButton() {
-
-    }
-
-    /**
-     * To define
-     */
-    protected final void writeUrl() {
-
-    }
-
-    /**
-     * To define
-     */
-    protected final void writeAlphanumeric() {
-
-    }
-
-    /**
-     * To define
-     */
-    protected final void writeNumeric() {
-
-    }
-
-    /**
-     * To define
-     */
-    protected final void writeEmail() {
-
-    }
-
-    /**
-     * To define
-     */
-    protected final void writePassword() {
-
-    }
-
-    /**
-     * To define
-     */
-    protected final void selectOption() {
-
-    }
-
-    /**
-     * To define
-     */
-    protected final void writeComment() {
+    protected final void clickOnModalButton(String nameBtn) {
 
     }
 
     /**
      * To define
      *
-     * @param option
+     * @param url
      */
-    protected final void clickOnOptionButton(String option) {
+    protected final void writeUrl(String url) {
+
+    }
+
+    /**
+     * To define
+     *
+     * @param text
+     */
+    protected final void writeAlphanumeric(String text) {
+
+    }
+
+    /**
+     * To define
+     *
+     * @param numbers
+     */
+    protected final void writeNumeric(String numbers) {
+
+    }
+
+    /**
+     * To define
+     *
+     * @param email
+     */
+    protected final void writeEmail(String email) {
+
+    }
+
+    /**
+     * To define
+     *
+     * @param password
+     */
+    protected final void writePassword(String password) {
+
+    }
+
+    /**
+     * To define
+     *
+     * @param optionText
+     */
+    protected final void selectOption(String optionText) {
+
+    }
+
+    /**
+     * To define
+     *
+     * @param comment
+     */
+    protected final void writeComment(String comment) {
+
+    }
+
+    /**
+     * To define
+     *
+     * @param optionButton
+     */
+    protected final void clickOnOptionButton(String optionButton) {
 
     }
 

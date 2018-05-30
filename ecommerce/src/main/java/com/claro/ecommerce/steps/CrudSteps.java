@@ -2,6 +2,7 @@ package com.claro.ecommerce.steps;
 
 import com.claro.ecommerce.pages.CrudPage;
 import org.jbehave.core.annotations.Given;
+import org.jbehave.core.annotations.Named;
 import org.jbehave.core.annotations.When;
 import org.jbehave.core.annotations.Then;
 
@@ -12,51 +13,52 @@ public class CrudSteps extends CrudPage {
         abrirPagina();
     }
 
-    @When("I click on \"Launch demo modal\" button")
-    public void stepIClickOnModalButton() {
-        clickOnModalButton();
+    @When("I click on $nameButton button")
+    public void stepIClickOnModalButton(@Named("nameButton") String nameBtn) {
+        clickOnModalButton(nameBtn);
     }
 
-    @When("I write \"https://www.google.com\" in Url input field")
-    public void whenIWritehttpswwwgooglecomInUrlInputField() {
-        writeUrl();
+    @When("I write $url in Url input field")
+    public void whenIWriteInUrlInputField(@Named("url") String url) {
+        writeUrl(url);
     }
 
-    @When("I write \"a1b2 in Alphanumeric input field")
-    public void whenIWritea1b2InAlphanumericInputField() {
-        writeAlphanumeric();
+    @When("I write $text in Alphanumeric input field")
+    public void whenIWriteInAlphanumericInputField(@Named("text") String text) {
+        writeAlphanumeric(text);
     }
 
-    @When("I write \"1234567890\" in Numeric input field")
-    public void whenIWrite1234567890InNumericInputField() {
-        writeNumeric();
+    @When("I write $numbers in Numeric input field")
+    public void whenIWriteInNumericInputField(@Named("Numbers") String numbers) {
+        writeNumeric(numbers);
     }
 
-    @When("I write \"mail@domain.com\" in Email input field")
-    public void whenIWritemaildomaincomInEmailInputField() {
-        writeEmail();
+    @When("I write $email in Email input field")
+    public void whenIWriteInEmailInputField(@Named("email") String email) {
+        writeEmail(email);
     }
 
-    @When("I write \"secret\" in Password input field")
-    public void whenIWritesecretInPasswordInputField() {
-        writePassword();
+    @When("I write $password in Password input field")
+    public void whenIWriteInPasswordInputField(@Named("password") String password) {
+        writePassword(password);
     }
 
-    @When("I select text \"Option 03\" from select field")
-    public void whenISelectTextOption03FromSelectField() {
-        selectOption();
+    @When("I select text $option from select field")
+    public void whenISelectTextOption03FromSelectField(@Named("option") String option) {
+        selectOption(option);
     }
 
-    @When("I write \"comment of student\" in Comment input field")
-    public void whenIWritecommentOfStudentInCommentInputField() {
-        writeComment();
+    @When("I write $comment in Comment input field")
+    public void whenIWriteInCommentInputField(@Named("comment") String comment) {
+        writeComment(comment);
     }
 
-    @When("I click on \"Option 1\" button option")
-    public void whenIClickOnOption1ButtonOption() {
-        clickOnOptionButton("option 1");
+    @When("I click on $optionButton button option")
+    public void whenIClickOnOption1ButtonOption(@Named("optionButton") String optionButton) {
+        System.out.println("Nombre del boton: " + optionButton);
+        clickOnOptionButton(optionButton);
     }
-
+/*
     @When("I click on \"Option 2\" button option")
     public void whenIClickOnOption2ButtonOption() {
         clickOnOptionButton("option 2");
@@ -71,7 +73,7 @@ public class CrudSteps extends CrudPage {
     public void whenIClickOnOption4ButtonOption() {
         clickOnOptionButton("option 4");
     }
-
+*/
     @Then("All is ok")
     public void thenAllIsOk() {
         AllIsOk();
