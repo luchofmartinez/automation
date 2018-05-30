@@ -1,8 +1,0 @@
-#org.jbehave.core.embedder.StoryManager
-#Wed May 30 09:40:45 ART 2018
-com/vates/test/stories/logout.story=7000
-com/vates/test/stories/crud.story=15000
-threads=1
-total=29000
-threadAverage=29000
-com/vates/test/stories/loguin.story=7000
