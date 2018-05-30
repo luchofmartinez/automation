@@ -1,7 +1,7 @@
 package com.claro.ecommerce.pages;
 
 /**
- * This class
+ * This class contains the methods defined for actions on the page
  */
 public class CrudPage {
 
