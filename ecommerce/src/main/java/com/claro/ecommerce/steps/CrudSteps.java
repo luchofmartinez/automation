@@ -1,17 +1,19 @@
 package com.claro.ecommerce.steps;
 
 import com.claro.ecommerce.pages.CrudPage;
-import org.jbehave.core.annotations.*;
+import org.jbehave.core.annotations.Given;
+import org.jbehave.core.annotations.When;
+import org.jbehave.core.annotations.Then;
 
 public class CrudSteps extends CrudPage {
 
     @Given("I open the web page")
-    public void stepIOpenTheWebPage(){
+    public void stepIOpenTheWebPage() {
         abrirPagina();
     }
 
     @When("I click on \"Launch demo modal\" button")
-    public void stepIClickOnModalButton(){
+    public void stepIClickOnModalButton() {
         clickOnModalButton();
     }
 
@@ -52,22 +54,22 @@ public class CrudSteps extends CrudPage {
 
     @When("I click on \"Option 1\" button option")
     public void whenIClickOnOption1ButtonOption() {
-         clickOnOptionButton(1);
+        clickOnOptionButton("option 1");
     }
 
     @When("I click on \"Option 2\" button option")
     public void whenIClickOnOption2ButtonOption() {
-        clickOnOptionButton(2);
+        clickOnOptionButton("option 2");
     }
 
     @When("I click on \"Option 3\" button option")
     public void whenIClickOnOption3ButtonOption() {
-        clickOnOptionButton(3);
+        clickOnOptionButton("option 3");
     }
 
     @When("I click on \"Option 4\" button option")
     public void whenIClickOnOption4ButtonOption() {
-        clickOnOptionButton(4);
+        clickOnOptionButton("option 4");
     }
 
     @Then("All is ok")

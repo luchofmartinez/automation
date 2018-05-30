@@ -8,78 +8,79 @@ public class CrudPage {
     /**
      * To define
      */
-    public void abrirPagina() {
+    protected final void abrirPagina() {
 
     }
 
     /**
      * To define
      */
-    public void clickOnModalButton() {
+    protected final void clickOnModalButton() {
 
     }
 
     /**
      * To define
      */
-    public void writeUrl() {
+    protected final void writeUrl() {
 
     }
 
     /**
      * To define
      */
-    public void writeAlphanumeric() {
+    protected final void writeAlphanumeric() {
 
     }
 
     /**
      * To define
      */
-    public void writeNumeric() {
+    protected final void writeNumeric() {
 
     }
 
     /**
      * To define
      */
-    public void writeEmail() {
+    protected final void writeEmail() {
 
     }
 
     /**
      * To define
      */
-    public void writePassword() {
+    protected final void writePassword() {
 
     }
 
     /**
      * To define
      */
-    public void selectOption() {
+    protected final void selectOption() {
 
     }
 
     /**
      * To define
      */
-    public void writeComment() {
+    protected final void writeComment() {
 
     }
 
     /**
      * To define
+     *
      * @param option
      */
-    public void clickOnOptionButton(int option) {
+    protected final void clickOnOptionButton(String option) {
 
     }
 
     /**
      * To define
      */
-    public void AllIsOk() {
+    protected final void AllIsOk() {
 
     }
 }
