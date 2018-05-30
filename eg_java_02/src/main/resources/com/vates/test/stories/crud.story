@@ -14,7 +14,7 @@ So that my information is up to date
 Scenario: Example of common Behaviour.
 
 Given I open the web page
-When I click on "Launch demo modal" button
+When I click on button Launch demo modal
 And I write "https://www.google.com" in Url input field
 And I write "A!B"C#D$F%" in Alphanumeric input field
 And I write "1234567890" in Numeric input field
