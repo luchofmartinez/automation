@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>com.vates.test.stories.loguin</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="com/vates/test/stories/loguin.story" title="">
+<meta>
+<property keyword="@" name="application" value="application_name"/>
+<property keyword="@" name="flow" value="flow_name"/>
+<property keyword="@" name="process" value="process_name"/>
+<property keyword="@" name="project" value="project_name"/>
+<property keyword="@" name="storyId" value="storyId"/>
+<property keyword="@" name="user" value="user_name"/>
+</meta>
+<scenario keyword="Scenario:" title="Example of common Behaviour.">
+<step outcome="successful">Given I open the web page</step>
+<step outcome="successful">When I click on &quot;Launch demo modal&quot; button</step>
+<step outcome="successful">And I write &quot;https://www.google.com&quot; in Url input field</step>
+<step outcome="successful">And I write &quot;A!B&quot;C#D$F%&quot; in Alphanumeric input field</step>
+<step outcome="successful">And I write &quot;1234567890&quot; in Numeric input field</step>
+<step outcome="successful">And I write &quot;mail@domain.com&quot; in Email input field</step>
+<step outcome="successful">And I write &quot;secret&quot; in Password input field</step>
+<step outcome="successful">And I select text &quot;Option 03&quot; from select field</step>
+<step outcome="successful">And I write &quot;comment of student&quot; in Comment input field</step>
+<step outcome="successful">And I click on &quot;Option 1&quot; button option</step>
+<step outcome="successful">And I click on &quot;Option 2&quot; button option</step>
+<step outcome="successful">And I click on &quot;Option 3&quot; button option</step>
+<step outcome="successful">And I click on &quot;Option 4&quot; button option</step>
+<step outcome="successful">Then All is ok</step>
+<step outcome="successful">And Example how create a table:
+    <parameter><parameters>
+<names><name>Area of focus</name><name>Story</name><name>Definitions</name></names>
+<values><value>business</value><value>yes</value><value>no</value></values>
+<values><value>testing</value><value>yes</value><value>maybe</value></values>
+<values><value>development</value><value>yes</value><value>yes</value></values>
+</parameters>
+</parameter></step>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>
