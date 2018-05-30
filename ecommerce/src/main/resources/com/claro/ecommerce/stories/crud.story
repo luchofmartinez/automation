@@ -1,10 +1,10 @@
 Meta:
-!--@application application_name
-!--@flow flow_name
-!--@process process_name
-!--@project project_name
-!--@user user_name
-!--@storyId US9999
+@application application_name
+@flow flow_name
+@process process_name
+@project project_name
+@user user_name
+@storyId US9999
 
 Narrative:
 As a student
