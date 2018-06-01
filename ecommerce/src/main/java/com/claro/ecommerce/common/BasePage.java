@@ -2,7 +2,7 @@ package com.claro.ecommerce.common;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -18,8 +18,8 @@ public class BasePage {
     private WebDriver driver;
     private static final long WAIT_MILLISECONDS = 1000;
     private static final int IMPLICITLY_WAIT_SECONDS = 10;
-    private static final String DRIVER_KEY = "webdriver.gecko.driver";
-    private static final String DRIVER_VALUE = "C:\\WebDrivers\\geckodriver.exe";
+    private static final String DRIVER_KEY = "webdriver.chrome.driver";
+    private static final String DRIVER_VALUE = "C:\\WebDrivers\\chromedriver.exe";
     private static final String BASE_URL = "http://automationcourse.herokuapp.com/crud.html";
 
     /**
@@ -27,7 +27,7 @@ public class BasePage {
      */
     protected final void createDriver() {
         System.setProperty(DRIVER_KEY, DRIVER_VALUE);
-        setDriver(new FirefoxDriver());
+        setDriver(new ChromeDriver());
         driver.manage().timeouts().implicitlyWait(IMPLICITLY_WAIT_SECONDS, TimeUnit.SECONDS);
     }
 

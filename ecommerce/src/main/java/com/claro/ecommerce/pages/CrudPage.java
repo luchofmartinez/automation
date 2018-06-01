@@ -89,6 +89,9 @@ public class CrudPage extends BasePage {
     protected final void writeComment(final String comment) {
         WebElement fieldUrl = getDriver().findElement(By.id("Comment"));
         fieldUrl.sendKeys(comment);
+
+        WebElement tabClick = getDriver().findElement(By.id("profile-tab"));
+        tabClick.click();
     }
 
     /**
@@ -97,7 +100,7 @@ public class CrudPage extends BasePage {
      * @param optionButton to define.
      */
     protected final void clickOnOptionButton(final String optionButton) {
-        WebElement fieldOption = getDriver().findElement(By.xpath(".//button[contains(.,'" + optionButton + "')]"));
+        WebElement fieldOption = getDriver().findElement(By.xpath("//html//div[@class='modal-footer']//button[contains(.,'Option 1')]"));
         fieldOption.click();
     }
 
