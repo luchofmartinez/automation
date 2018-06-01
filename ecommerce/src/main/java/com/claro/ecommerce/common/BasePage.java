@@ -19,7 +19,7 @@ public class BasePage {
     private static final long WAIT_MILLISECONDS = 1000;
     private static final int IMPLICITLY_WAIT_SECONDS = 10;
     private static final String DRIVER_KEY = "webdriver.gecko.driver";
-    private static final String DRIVER_VALUE = "./src/main/resources/driver/geckodriver";
+    private static final String DRIVER_VALUE = "C:\\WebDrivers\\geckodriver.exe";
     private static final String BASE_URL = "http://automationcourse.herokuapp.com/crud.html";
 
     /**
